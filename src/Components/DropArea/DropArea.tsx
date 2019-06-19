@@ -3,8 +3,8 @@ import ReactDropzone from 'react-dropzone'
 import './DropArea.css'
 
 interface IState {
-    imageFiles: any[],
     dropzone: any
+    imageFiles: any[],
 }
 
 interface IProps{
@@ -15,9 +15,9 @@ export default class DropArea extends React.Component<IProps, IState>{
     constructor(props: any) {
         super(props)
         this.state = {
-            imageFiles: [],
             dropzone: this.onDrop.bind(this),
             imageFiles: []
+        }
     }
 
     public onDrop(files: any) {
