@@ -16,8 +16,8 @@ export default class DropArea extends React.Component<IProps, IState>{
         super(props)
         this.state = {
             imageFiles: [],
-            dropzone: this.onDrop.bind(this)
-        }
+            dropzone: this.onDrop.bind(this),
+            imageFiles: []
     }
 
     public onDrop(files: any) {
